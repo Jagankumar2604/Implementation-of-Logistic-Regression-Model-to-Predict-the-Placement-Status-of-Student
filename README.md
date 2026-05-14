@@ -9,29 +9,41 @@ To write a program to implement the the Logistic Regression Model to Predict the
 
 ## Algorithm
 1.Start
+
 2.Import required libraries: pandas, numpy, sklearn (for preprocessing, splitting, model, and evaluation).
+
 3.Load dataset: Read Placement_Data.csv using pandas.read_csv().
+
 4.Data preprocessing:
 a.Drop irrelevant columns: sl_no (serial number), salary (since placement is predicted before salary). b.Encode categorical variables (gender, ssc_b, hsc_b, hsc_s, degree_t, workex, specialisation, status) into numerical values using LabelEncoder.
+
 
 5.Define features and target:
 a.Features X = all columns except status. b.Target y = status column (0 = Not Placed, 1 = Placed).
 
+
 6.Split dataset: Divide into training and testing sets using train_test_split with 80% training and 20% testing.
+
 7.Standardize features: Apply StandardScaler to scale the numeric values for better model convergence.
+
 8.Build Logistic Regression model:
 a.Initialize Logistic Regression with max_iter=200. b.Train (fit) the model using training data (X_train, y_train).
 
+
 9.Predict placement status: Use the trained model to predict on X_test.
+
 10.Evaluate performance:
+
 
 ## Program:
 
-/*
+
 Program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
+
 Developed by: Jagan kumar V
+
 RegisterNumber:  212225100018
-*/
+
 ```python
 # Logistic Regression for Placement Prediction (using Placement_Data.csv)
 
